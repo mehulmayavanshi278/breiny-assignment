@@ -4,8 +4,8 @@ import {
 } from "@mui/icons-material";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+const Sidebar = ({isOpen , setIsOpen}) => {
+  
   const [activeTab, setActiveTab] = useState();
 
   const toggleSidebar = () => setIsOpen(!isOpen);
@@ -29,7 +29,7 @@ const Sidebar = () => {
       <div
         className={`${
           isOpen ? "w-64" : "w-16"
-        } bg-gray-800 text-white h-screen transition-width duration-300`}
+        } bg-gray-800 text-white h-screen fixed transition-width duration-300`}
       >
     
         <div className="flex items-center justify-between p-4">

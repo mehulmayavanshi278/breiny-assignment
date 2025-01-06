@@ -287,6 +287,10 @@ const Signup = () => {
           )}
         </div>
       </form>
+
+      <div className="h-[600px] bg-red">
+        
+      </div>
     </div>
     </div>
   );
